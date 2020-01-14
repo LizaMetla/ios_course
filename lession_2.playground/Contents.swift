@@ -3,21 +3,16 @@
 import UIKit
 import PlaygroundSupport
 
-class MyViewController : UIViewController {
-    override func loadView() {
-        let view = UIView()
-        view.backgroundColor = .white
+let constMaxUInt: UInt = UInt.max
+constMaxUInt
 
-        let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
-        
-        view.addSubview(label)
-        self.view = view
-    }
-}
+print(constMaxUInt)
+
+
+//class Pl {
+//    func playground()  {
+//        object = 10
+//    }
+//    var object: Int = 0
+//}
 // Present the view controller in the Live View window
-PlaygroundPage.current.liveView = MyViewController()
-//hello
-//hhh
