@@ -29,7 +29,70 @@ var num2 = 6
 var num3 = num1 > num2 ? num1 - num2 : num1 + num2
 print(num3)
 
+//switch-case try
+var num: Int = 88
 
+switch num{
+case 0:
+    print("variable is 0")
+case 2:
+    print("variable is 2")
+case 88:
+    print("variable is 88")
+default:
+    print("can't recognise this number")
+}
+
+//talking about "_"
+let number = 5
+switch number {
+case 1:
+    print("Number = 1")
+case 2:
+    print("Number = 2")
+case _:
+    print("Number не равно ни 1, ни 2, но это не точно")
+}
+
+//сравнивать выражение не с одним значением, а с группой значений:
+var num6: Int = 20
+
+switch num6 {
+case 0, 10:     // если num равно 0 или 10
+    print("Переменная равна 0 или 10")
+case 11..<20:    // если num в диапазоне от 11 до 20, не включая 20
+    print("Переменная находится в диапазоне от 11 до 20")
+case 20...30:   // если num в диапазоне от 20 до 30
+    print("Переменная находится в диапазоне от 20 до 30")
+default:
+    print("не удалось распознать число")
+}
+//Оператор case 0, 10 задает два сравниваемых значения 0 и 10 и срабатывает, если выражение равно одному из этих значений.
+//
+//Оператор case 11..<20 определяет целый диапазон значений от 11 до 20 (не включая 20) и срабатывает, если выражение равно значению из этого диапазона.
+//
+//Оператор case 20...30 определяет целый диапазон значений от 20 до 30 (включая оба числа) и срабатывает, если выражение равно значению из этого диапазона.
+
+
+
+//talking about tuples in switch-case
+
+let personInfo = ("Tom", 18)
+
+switch personInfo {
+    
+case ("Bob", 33):
+    print("Имя: Bob, возраст: 33")
+case (_, 18):
+    print("Name: \(personInfo.0), Age: 18")
+    fallthrough
+case ("Tom", _):
+    print("Name: Tom, Age: \(personInfo.1)")
+case ("Tom", 1...20):
+    print("Имя: Tom и возраст от 1 до 20")
+default:
+    ("can't recognize the information")
+}
 //class Pl {
 //    func playground()  {
 //        object = 10
