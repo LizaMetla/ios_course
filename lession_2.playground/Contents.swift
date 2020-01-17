@@ -93,6 +93,22 @@ case ("Tom", 1...20):
 default:
     ("can't recognize the information")
 }
+
+let simpleTuple : (String, Int, Double) = ("MAX", 1, 2.5)
+
+let (stringMax, intNumber, doubleNumber) = simpleTuple
+
+stringMax
+intNumber
+doubleNumber
+
+simpleTuple.0
+simpleTuple.1
+simpleTuple.2
+
+simpleTuple
+
+
 //class Pl {
 //    func playground()  {
 //        object = 10
