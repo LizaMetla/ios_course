@@ -108,6 +108,22 @@ simpleTuple.2
 
 simpleTuple
 
+//Но если мы хотим, чтобы также выполнялся и следующий оператор case (или оператор default), то в конце предыдущего блока case следует использовать оператор fallthrough:
+
+let personInfoSecond = ("Max", 22)
+
+switch personInfoSecond {
+case ("Bob", 33):
+    print("Имя: Bob, возраст: 33")
+case (_, 22):
+    print("Имя: \(personInfoSecond.0) и возраст: 22")
+    fallthrough
+case ("Tom", _):
+    print("Имя: Tom и возраст: \(personInfo.1)")
+        default:
+        print("Информация не распознана")
+}
+
 
 //class Pl {
 //    func playground()  {
