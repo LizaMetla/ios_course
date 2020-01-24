@@ -44,15 +44,12 @@ if let firsNilElement = array2.first(where: {$0 == 0}) {
 //2. Write a Swift program to test if an array of integers does not contain a 3 or a 5.
 //произвести проверку двух массивов(Int) на отсутствие в них элементов 3 и 5 и вывести соответствующее сообщение в консоль
 
-if array1.contains(3) && array1.contains(5) {
-    print("array1 contains 3 and 5")
-} else {
+//modified
+if !(array1.contains(3) && array1.contains(5)) {
     print("not here absolutely")
 }
 
-if array2.contains(3) && array2.contains(5) {
-    print("array2 contains 3 and 5")
-} else {
+if !(array2.contains(3) && array2.contains(5)) {
     print("not here absolutely")
 }
 
@@ -64,6 +61,14 @@ if array1.first == array1.last {
 } else {
     print("not the same")
 }
+
+//let limit = array1.count-1
+//var index = 3
+//
+//!array1.isEmpty
+//if !array1.isEmpty && index >= 0 && index < limit {
+//    if array1[0] == array
+//}
 
 //4. Write a Swift program that creates Array, adds an item, remove item, modify item and then prints size of the array.
 //проинициализировать массив, добавить в него элемент, удалить элемент, модифицировать какой-нибудь элемент и вывести в консоль размер массива(количество элементов)
