@@ -56,8 +56,6 @@ if array2.contains(3) && array2.contains(5) {
     print("not here absolutely")
 }
 
-
-
 //3. Write a Swift program to check whether the first element and the last element of a given array of integers are equal.
 //произвести проверку одинаковы ли первый и последний элементы данного массива(Int) и вывести соответствующее сообщение в консоль
 
@@ -109,8 +107,6 @@ print(films.count)
 //7. Create 2 arrays, and merge them.
 //проинициализировать 2 массива и объединить(можно в новом массиве)
 
-
-
 func newRandomArr() -> Array<Int>
 {
     var array: Array<Int> = []
@@ -131,3 +127,10 @@ print(intArray2)
 
 //8. Write a closure to sum 2 integers, pass closure as argument to function, where return the result of calling that closure.
 //Написать замыкание(closure), задача которого складывать 2 полученных аргумента типа Int и вернуть его или вывести в консоль.
+
+var intClosure: (Int, Int) -> Int = { int1, int2 in
+    
+    return int1 + int2
+}
+
+print(intClosure(5, 5))
