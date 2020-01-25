@@ -39,5 +39,16 @@ intOneSidedRangeThrough.upperBound
 
 //talking about LOOPS
 //for
+let autoArray = Array(repeating:20, count:5)
+
+for element in autoArray {
+    print(element)
+}
 
 
+
+for value in autoArray.enumerated() { //делает последоватеьность 
+    print(value.element, value.offset)
+    guard value.offset == 10 else { break }
+    print("Number 10:\(value.element)")
+}
