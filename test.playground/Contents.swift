@@ -18,9 +18,13 @@ sum = x + Int(y)
 /*:
  2. Разверните опционал sum и выведите в консоль. Обратите внимание чтобы в выводе отсутствовало Optional()
  */
-if let NotOptionalSum = sum {
-print(NotOptionalSum)
+if sum != nil {
+    let NotOptionalSum = sum!
+    print(NotOptionalSum)
 }
+//if let NotOptionalSum = sum {
+//print(NotOptionalSum)
+//}
 /*:
  3. Выведите в консоль четные числа от 2 до 2000
  */
