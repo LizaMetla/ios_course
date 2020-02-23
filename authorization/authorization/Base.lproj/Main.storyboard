@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,41 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3J0-rU-N19">
-                                <rect key="frame" x="67" y="346.66666666666669" width="241" height="128.66666666666669"/>
-                                <color key="backgroundColor" red="1" green="0.32545623154656411" blue="0.2496648202693823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-7t-nZX">
+                                <rect key="frame" x="67" y="386" width="240" height="50"/>
+                                <color key="backgroundColor" red="0.63766162024810535" green="0.67160587893597001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="3J0-rU-N19" secondAttribute="height" multiplier="15:8" id="xYX-LE-7we"/>
+                                    <constraint firstAttribute="height" constant="50" id="0Z0-cT-dKU"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Color is RED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kg-FD-1NG">
-                                <rect key="frame" x="67" y="286.66666666666669" width="241" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbN-2v-Qln">
+                                <rect key="frame" x="67" y="34" width="240" height="342"/>
+                                <string key="text">Как Логическая операция И выше, Логическая операция ИЛИ использует оценку короткого замыкания для рассмотрения ее выражений. Если левая сторона Логического выражения OR true, правая сторона не оценена, потому что она не может изменить результат полного выражения.
+
+В примере ниже, первое Bool значение (hasDoorKey) false, но второе значение (knowsOverridePassword) true. Поскольку одно значение true, полное выражение также оценивает к true, и доступ предоставляется:</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <string key="userLabel">Как Логическая операция И выше, Логическая операция ИЛИ использует оценку короткого замыкания для рассмотрения ее выражений. Если левая сторона Логического выражения OR true, правая сторона не оценена, потому что она не может изменить результат полного выражения.  В примере ниже, первое Bool значение (hasDoorKey) false, но второе значение (knowsOverridePassword) true. Поскольку одно значение true, полное выражение также оценивает к true, и доступ предоставляется:</string>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F05-Rc-WDQ">
-                                <rect key="frame" x="151" y="528" width="73" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="F05-Rc-WDQ" secondAttribute="height" multiplier="73:34" id="HWw-a9-b5P"/>
-                                    <constraint firstAttribute="height" constant="34" id="iuB-q2-fXg"/>
-                                    <constraint firstAttribute="width" constant="73" id="wKT-Kq-aYo"/>
-                                </constraints>
-                                <state key="normal" title="BUTTON">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3kg-FD-1NG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2RY-YV-QF7"/>
-                            <constraint firstItem="3J0-rU-N19" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ALT-sK-AKT"/>
-                            <constraint firstItem="3J0-rU-N19" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="JlG-bZ-Pzf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F05-Rc-WDQ" secondAttribute="bottom" constant="216" id="Q1h-Fp-CO0"/>
-                            <constraint firstItem="3kg-FD-1NG" firstAttribute="width" secondItem="3J0-rU-N19" secondAttribute="width" id="WE4-iS-FuQ"/>
-                            <constraint firstItem="3J0-rU-N19" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hn9-AK-AGM"/>
-                            <constraint firstItem="F05-Rc-WDQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hpZ-er-6Gc"/>
-                            <constraint firstItem="3J0-rU-N19" firstAttribute="top" secondItem="3kg-FD-1NG" secondAttribute="bottom" constant="39" id="vNn-a5-Dub"/>
+                            <constraint firstItem="dd4-7t-nZX" firstAttribute="top" secondItem="EbN-2v-Qln" secondAttribute="bottom" constant="10" id="2fQ-xu-YdR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="EbN-2v-Qln" secondAttribute="top" constant="10" id="5VF-UL-gC7"/>
+                            <constraint firstItem="EbN-2v-Qln" firstAttribute="leading" secondItem="dd4-7t-nZX" secondAttribute="leading" id="GMr-fH-4lS"/>
+                            <constraint firstItem="dd4-7t-nZX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="azR-HD-3bc"/>
+                            <constraint firstItem="EbN-2v-Qln" firstAttribute="trailing" secondItem="dd4-7t-nZX" secondAttribute="trailing" id="hqR-RK-H7u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dd4-7t-nZX" secondAttribute="trailing" constant="68" id="rAg-Yj-vx0"/>
+                            <constraint firstItem="dd4-7t-nZX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tTU-b7-ESQ"/>
+                            <constraint firstItem="dd4-7t-nZX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="ugC-Ll-nK5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
